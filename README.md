@@ -1,1 +1,2 @@
-# Análise do Mercado de Fintechs Brasileiro\n\nEm construção.
+# Análise do Mercado de Fintechs Brasileiro
+Em construção.
