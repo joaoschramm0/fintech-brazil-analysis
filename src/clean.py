@@ -11,4 +11,3 @@ df_ok.to_csv('data/processed/pix_data.csv', index=False)
 
 
 
-
