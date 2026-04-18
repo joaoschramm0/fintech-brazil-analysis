@@ -40,7 +40,14 @@ ax1.annotate(f'R$ {projection[-1]:.1f}T em 2027',
              textcoords='offset points',
              fontsize=10,
              ha='left')
+ax1.annotate('Fake news\ntaxação PIX', 
+             xy=(quedas.index[0], quedas['VALOR_TRI'].iloc[0]),
+             xytext=(30, -30),
+             textcoords='offset points',
+             fontsize=12,
+             arrowprops=dict(arrowstyle='->', color='darkblue'))
 ax1.scatter(future_date[-1], projection[-1], color='red', zorder=5, s=45)
+
 
 # Quantidade
 ax2 = ax1.twinx()
@@ -52,5 +59,6 @@ ax1.scatter(quedas.index, quedas['VALOR_TRI'], color='darkblue', zorder=5, label
 ax1.legend(loc='upper left')
 
 plt.title('PIX: Volume Financeiro e Quantidade de Transações')
+plt.tight_layout()
 plt.savefig('outputs/pix_volume_quantidade.png')
 
